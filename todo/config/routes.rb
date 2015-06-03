@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # put '/students/:id', to: 'students#update'
   # delete 'students/:id', to: 'students#destroy'
   get('/todos', { to: 'todos#index'  })
-  # post('/students', { to: 'students#create' })
+  post('/todos', { to: 'todos#create' })
 
   # root 'students#index'
   # The priority is based upon order of creation: first created -> highest priority.
