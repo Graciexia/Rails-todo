@@ -22,7 +22,7 @@ class TodosController < ApplicationController
 
   def create
     begin
-      todo = Todo.create(todo: params(:todo))
+      todo = Todo.create(todo: params[:todo])
       render json: todo
       rescue ActionController::ParameterMissing => error
       render json: { error: error.message }, status: 422
