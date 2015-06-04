@@ -1,28 +1,32 @@
-== README
+# Rails todo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+This is a rails API for storing, creating, and listing… TODOS!
+There are todos and status(complete) in the table.
+Comeplete is set to 'fasle' by default
 
-Things you may want to cover:
+## Ruby version
+ 2.2.1
 
-* Ruby version
+## Modules
+>> datebase (migration table): create_todos.rb (located in db/migrate)
+>> Models: todo.rb (located in models)
+>> controllers: todos.rb (located in controllers/concerns)
+>> routes.rb (located in config)
+>> seeds .rb (located in db)
+>> Germfile
 
-* System dependencies
+## Object
+### Search
+ You can serch the todos and check it status on website 'http://localhost:3000/todos'.
+ When you insert 'http://localhost:3000/todos', it will show you the whole list.
+ You can also search by id number, like "http://localhost:3000/todos/1".
+ When the id doesn't exit, it will show you the erro.
+ when you search for 'http://localhost:3000/todos/new',it will show you an empty todo.
 
-* Configuration
+### update
+ You can update the todo name and status on Postman, like add todo name or change the comeplete into 'true'.
 
-* Database creation
+### delete
+ You can update the todo name and status on Postman by id number, then it will show you this item was destroyed.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
